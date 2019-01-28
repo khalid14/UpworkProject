@@ -1,5 +1,5 @@
 <template>
-    <v-toolbar flat class="grey darken-1 second-level-nav">
+    <v-toolbar flat class="grey darken-1 second-level-nav" height="55">
         <v-toolbar-items>
             <v-menu transition="slide-x-transition" offset-y>
                 <v-btn :to="getUrl" slot="activator" dark flat class="text-capitalize">

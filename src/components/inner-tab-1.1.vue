@@ -71,7 +71,7 @@
                             <h1 class="headline mb-4 text-xs-center">Add your new device</h1>
                         </v-flex>
                         <v-flex xs12>
-                            <v-tabs grow centered color="grey lighten-1" dark icons-and-text class="device-tabs">
+                            <v-tabs height="60" grow centered color="grey lighten-1" dark icons-and-text class="device-tabs">
                                 <v-tabs-slider color="primary"></v-tabs-slider>
                                 <v-tab href="#tab-1" class="text-capitalize">
                                     <v-icon class="mb-0 mr-3">recent_actors</v-icon>
@@ -89,7 +89,7 @@
                                 </v-tab>
 
                                 <v-tab-item value="tab-1">
-                                    <v-card class="single-inner-tab pa-5">
+                                    <v-card class="single-inner-tab px-3 pt-5 pb-0">
                                         <v-card-text class="pa-0">
                                             <v-layout row wrap>
                                                 <v-flex md6 px-2 mb-5>
@@ -164,7 +164,7 @@
                                     </v-card>
                                 </v-tab-item>
                                 <v-tab-item value="tab-2">
-                                    <v-card class="single-inner-tab pa-5">
+                                    <v-card class="single-inner-tab px-3 pt-5 pb-2">
                                         <v-card-text class="pa-0">
                                             <v-layout row wrap>
                                                 <v-flex sm6>
@@ -211,17 +211,17 @@
                                                         </v-flex>
                                                     </v-layout>
                                                     <v-layout row wrap>
-                                                        <v-flex md4 px-2 mb-5 d-flex align-center>
+                                                        <v-flex md4 px-2 d-flex align-center>
                                                             <v-label>SNMP Agents</v-label>
                                                         </v-flex>
-                                                        <v-flex md3 px-2 mb-5>
+                                                        <v-flex md3 px-2>
                                                             <v-btn class="primary" flat small>Add</v-btn>
                                                         </v-flex>
                                                     </v-layout>
                                                 </v-flex>
                                                 <v-flex sm6>
                                                     <v-layout row wrap>
-                                                        <v-flex md6 px-2 mb-5>
+                                                        <v-flex md12 px-2 mb-5>
                                                             <v-label>Connection Credentials</v-label>
                                                             <v-select
                                                                     :items="connCredentials"
@@ -275,7 +275,7 @@
                                                         </v-flex>
                                                     </v-layout>
                                                     <v-layout row wrap>
-                                                        <v-flex md6 px-2 mb-5>
+                                                        <v-flex md6 px-2>
                                                             <v-label>User Password</v-label>
                                                             <v-text-field
                                                                     :append-icon="show3 ? 'visibility_off' : 'visibility'"
@@ -288,7 +288,7 @@
                                                                     hide-detials
                                                             ></v-text-field>
                                                         </v-flex>
-                                                        <v-flex md6 px-2 mb-5>
+                                                        <v-flex md6 px-2>
                                                             <v-label>Enable Secret</v-label>
                                                             <v-text-field
                                                                     hide-details
@@ -305,19 +305,17 @@
                                     </v-card>
                                 </v-tab-item>
                                 <v-tab-item value="tab-3">
-                                    <v-card class="single-inner-tab pa-5">
+                                    <v-card class="single-inner-tab px-3 pt-5 pb-0">
                                         <v-card-text class="pa-0">
                                             <v-layout row wrap>
-                                                <v-flex md12 px-2 mb-5 class="radio-selection">
+                                                <v-flex md3 px-2 mb-5 class="radio-selection">
                                                     <v-label>Enable TRAFip collect</v-label>
                                                     <v-radio-group v-model="row1" row>
                                                         <v-radio color="primary" label="Yes" value="radio-1"></v-radio>
                                                         <v-radio color="primary" label="No" value="radio-2"></v-radio>
                                                     </v-radio-group>
                                                 </v-flex>
-                                            </v-layout>
-                                            <v-layout row wrap>
-                                                <v-flex md7 px-2 mb-5>
+                                                <v-flex md6 px-2 mb-5>
                                                     <v-label>Netflow exporter ip address<sup class="font-weight-bold red--text">*</sup></v-label>
                                                     <v-text-field
                                                             hide-details
@@ -377,7 +375,7 @@
             font-size: 16px;
             font-weight: 300;
             display: inline-block;
-            padding: 20px 0px 0px;
+            padding: 17px 0px 0px;
         }
         .v-tabs__item--active{
             background-color: $primary-color;
