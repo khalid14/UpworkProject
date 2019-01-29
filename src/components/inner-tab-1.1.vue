@@ -1,7 +1,7 @@
 <template>
     <div id="inner-single-page">
         <v-layout row wrap>
-            <v-flex sm3>
+            <v-flex sm2>
                 <v-navigation-drawer dark class="primary inner-left-nav">
                     <v-list dense>
                         <template v-for="item in items">
@@ -64,9 +64,9 @@
                     </v-list>
                 </v-navigation-drawer>
             </v-flex>
-            <v-flex sm8>
-                <v-container>
-                    <v-layout row wrap class="mt-5">
+            <v-flex sm10>
+                <v-container class="py-0">
+                    <v-layout row wrap class="mt-4">
                         <v-flex xs12>
                             <h1 class="headline mb-4 text-xs-center">Add your new device</h1>
                         </v-flex>
