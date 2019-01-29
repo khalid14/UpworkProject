@@ -89,7 +89,7 @@
                                 </v-tab>
 
                                 <v-tab-item value="tab-1">
-                                    <v-card class="single-inner-tab px-3 pt-5 pb-0">
+                                    <v-card class="single-inner-tab px-3 pt-4 pb-0">
                                         <v-card-text class="pa-0">
                                             <v-layout row wrap>
                                                 <v-flex md6 px-2 mb-5>
@@ -141,7 +141,7 @@
                                                 </v-flex>
                                             </v-layout>
                                             <v-layout row wrap>
-                                                <v-flex md6 px-2 mb-5>
+                                                <v-flex md6 px-2 mb-4>
                                                     <v-label>Longitude</v-label>
                                                     <v-text-field
                                                             hide-details
@@ -150,7 +150,7 @@
                                                             placehloder="Enter Longitude"
                                                     ></v-text-field>
                                                 </v-flex>
-                                                <v-flex md6 px-2 mb-5>
+                                                <v-flex md6 px-2 mb-4>
                                                     <v-label>Latitude</v-label>
                                                     <v-text-field
                                                             hide-details
@@ -164,7 +164,7 @@
                                     </v-card>
                                 </v-tab-item>
                                 <v-tab-item value="tab-2">
-                                    <v-card class="single-inner-tab px-3 pt-5 pb-2">
+                                    <v-card class="single-inner-tab px-3 pt-4 pb-0">
                                         <v-card-text class="pa-0">
                                             <v-layout row wrap>
                                                 <v-flex sm6>
@@ -305,17 +305,17 @@
                                     </v-card>
                                 </v-tab-item>
                                 <v-tab-item value="tab-3">
-                                    <v-card class="single-inner-tab px-3 pt-5 pb-0">
+                                    <v-card class="single-inner-tab px-3 pt-4 pb-0">
                                         <v-card-text class="pa-0">
                                             <v-layout row wrap>
-                                                <v-flex md3 px-2 mb-5 class="radio-selection">
+                                                <v-flex md3 px-2 mb-4 class="radio-selection">
                                                     <v-label>Enable TRAFip collect</v-label>
                                                     <v-radio-group v-model="row1" row>
                                                         <v-radio color="primary" label="Yes" value="radio-1"></v-radio>
                                                         <v-radio color="primary" label="No" value="radio-2"></v-radio>
                                                     </v-radio-group>
                                                 </v-flex>
-                                                <v-flex md6 px-2 mb-5>
+                                                <v-flex md6 px-2 mb-4>
                                                     <v-label>Netflow exporter ip address<sup class="font-weight-bold red--text">*</sup></v-label>
                                                     <v-text-field
                                                             hide-details
@@ -325,7 +325,7 @@
                                                             append-outer-icon="search"
                                                     ></v-text-field>
                                                 </v-flex>
-                                                <v-flex md3 px-2 mb-5>
+                                                <v-flex md3 px-2 mb-4>
                                                     <v-label>Sampling Rate Configuration</v-label>
                                                     <v-select
                                                             :items="sampleRate"

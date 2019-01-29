@@ -1,5 +1,5 @@
 <template>
-    <v-toolbar flat class="grey darken-1 second-level-nav" height="55">
+    <v-toolbar flat class="grey darken-1 second-level-nav" height="32">
         <v-toolbar-items>
             <v-menu transition="slide-x-transition" offset-y>
                 <v-btn :to="getUrl" slot="activator" dark flat class="text-capitalize">
@@ -22,8 +22,11 @@
 
 <style lang="scss" scoped>
     @import "../assets/variable";
-    .second-level-nav  .v-btn:hover{
-        background-color: $primary-color;
+    .second-level-nav  .v-btn{
+        font-size: 13px;
+        &:hover{
+            background-color: $primary-color;
+        }
     }
 
 </style>
