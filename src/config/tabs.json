@@ -1,0 +1,76 @@
+{
+  "topTabsNavigation": [
+    {
+      "parentName": "Historical Data",
+      "children": [
+        {"name":"Network overview","link":"network_overview"},
+        {"name":"Favorites","link":"favorites?m=0"},
+        {"name":"Totals","link":"frameset_main?target=objbrowser?t=-9&totals=1&filter="},
+        {"name":"Subnets","link":"frameset_mbrowser?o=10"},
+        {"name":"Devices","link":"frameset_mbrowser?o=50"},
+        {"name":"Applications","link":"frameset_mbrowser?o=20"},
+        {"name":"Protocols","link":"frameset_mbrowser?o=40"},
+        {"name":"Autonomous systems","link":"frameset_mbrowser?o=70"},
+        {"name":"ToS","link":"frameset_mbrowser?o=80"},
+        {"name":"Reports","link":"frameset_main?target=objbrowser?t=-10&filter="},
+        {"name":"Graph set","link":"frameset_main?target=objbrowser?t=-60"},
+        {"name":"NOC display","link":"objviewer?visual_type=3&gs_oper=1&d=%d&ht=1"},
+        {"name":"Route history","link":"frameset_main?target=objbrowser?t=-90"},
+        {"name":"IP Mapper","link":"frameset_main?target=objbrowser?t=-100"}
+      ]
+    },
+    {
+      "parentName": "Configuration",
+      "children": [
+        {"name":"Traffic profiles","link":"cfgprofile"},
+        {"name":"Domains","link":"cfg?o=60&a=0&m=1"},
+        {"name":"Collectors","link":"cfg?o=95&a=0&m=1"},
+        {"name":"Objects","link":"cfg"},
+        {"name":"Mappers","link":"mappercfg"},
+        {"name":"EPM","link":"cfg?o=110&a=0&sysid=1"},
+        {"name":"Rules","link":"cfgprofsla?a=0&t=230"},
+        {"name":"Scripts","link":"script"},
+        {"name":"Device credential","link":"frameset_main?target=objbrowser?t=-150"}
+      ]
+    },
+    {
+      "parentName": "Tools",
+      "children": [
+        {"name":"External software","link":"tool_list"},
+        {"name":"MIB browser","link":"mibbrowser"},
+        {"name":"Discovery","link":"ipscan"}
+      ]
+    },
+    {
+      "parentName": "System",
+      "children": [
+        {"name":"Access Log","link":"frameset_main?target=objbrowser?t=-15"},
+        {"name":"Backup/Restore","link":"frameset_main?target=drestore%3Fcmd=menu"},
+        {"name":"Users","link":"frameset_main?target=objbrowser?t=100"},
+        {"name":"Parameters","link":"frameset_main?target=system_conf%3Fcmd=menu"},
+        {"name":"Diagnostics","link":"frameset_main?target=objbrowser?t=-20"},
+        {"name":"Support","link":"callback"},{"name":"Update","link":"update"},
+        {"name":"Time zone","link":"timezone"},
+        {"name":"Manual","link":"/cgi-bin/manual"}
+      ]
+    },
+    {
+      "parentName": "ALARM Manager",
+      "children": [
+        {"name":"Reports","link":"frameset_main?target=objbrowser?t=-40"},
+        {"name":"Email template","link":"email_template"},
+        {"name":"Alarm urgency level","link":"cfg?o=111&a=0"},
+        {"name":"Alarms","link":"cfg?o=93&a=0&m=1&filter=&sysid=1"},
+        {"name":"Alarm profile","link":"cfg?o=94&a=0&m=1&filter=&sysid=1"},
+        {"name":"Service alarms","link":"cfg?o=114&a=0"},
+        {"name":"Console","link":"init_applet?html=1"}
+      ]
+    },
+    {
+      "parentName": "About",
+      "children": [
+        {"name":"About","link":"about"}
+      ]
+    }
+  ]
+}

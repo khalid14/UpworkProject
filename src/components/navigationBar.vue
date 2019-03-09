@@ -1,21 +1,21 @@
 <template>
     <v-toolbar flat class="grey darken-1 second-level-nav" height="32">
         <v-toolbar-items>
-            <v-menu transition="slide-x-transition" offset-y>
+            <v-menu v-for="(tabs,index) in tabsNav" :key="index" transition="slide-x-transition" offset-y>
                 <v-btn :to="getUrl" slot="activator" dark flat class="text-capitalize">
-                    Tab 1 <v-icon class="ml-1">keyboard_arrow_down</v-icon>
+                    {{tabs.parentName}} <v-icon class="ml-1">keyboard_arrow_down</v-icon>
                 </v-btn>
                 <v-list>
-                    <v-list-tile v-for="(megaItem, index) in MegaItems" :key="index" @click="assignUrl(megaItem.url)" :to="megaItem.url">
+                    <v-list-tile v-for="(tabsChild, childIndex) in tabs.children" :key="childIndex" @click="assignUrl(tabsChild.link)" :to="tabsChild.link">
                         <v-list-tile-title>
-                            {{ megaItem.itemText }}
+                            {{ tabsChild.name }}
                         </v-list-tile-title>
                     </v-list-tile>
                 </v-list>
             </v-menu>
-            <v-btn flat depressed  dark v-for="(navItem,index) in navItems" :key="index" class="text-capitalize">
-                {{navItem.itemText}}
-            </v-btn>
+            <!--<v-btn flat depressed  dark v-for="(navItem,index) in navItems" :key="index" class="text-capitalize">-->
+                <!--{{navItem.itemText}}-->
+            <!--</v-btn>-->
         </v-toolbar-items>
     </v-toolbar>
 </template>
@@ -32,10 +32,14 @@
 </style>
 
 <script>
+
+    import tabsNavigation from '../config/tabs';
+
     export default {
         data(){
             return{
                 getUrl:'/',
+                tabsNav: tabsNavigation.topTabsNavigation,
                 navItems:[
                     {
                         itemText:'Tab 2',
